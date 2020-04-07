@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="key_scale_status" type="id" />
+    <item name="key_cach_textsize" type="id" />
+    <item name="key_cach_width" type="id" />
+    <item name="key_cach_height" type="id" />
+    <item name="key_cach_leftpadding" type="id" />
+    <item name="key_cach_toppadding" type="id" />
+    <item name="key_cach_rightpadding" type="id" />
+    <item name="key_cach_bottompadding" type="id" />
+    <item name="key_cach_leftmargin" type="id" />
+    <item name="key_cach_topmargin" type="id" />
+    <item name="key_cach_rightmargin" type="id" />
+    <item name="key_cach_bottommargin" type="id" />
+</resources>
