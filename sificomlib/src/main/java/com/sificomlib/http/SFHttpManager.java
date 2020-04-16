@@ -1,8 +1,8 @@
-package com.molaith.sificomlib.http;
+package com.sificomlib.http;
 
 import android.text.TextUtils;
 
-import com.molaith.sificomlib.logger.SFLogger;
+import com.sificomlib.logger.SFLogger;
 
 import java.io.File;
 import java.security.SecureRandom;
@@ -56,6 +56,11 @@ public class SFHttpManager {
         return this;
     }
 
+    public SFHttpManager setMediaType(MediaType type) {
+        mediaType = type;
+        return this;
+    }
+
     public SFHttpManager addParam(String key, String value) {
         if (params == null) {
             params = new LinkedHashMap<>();
@@ -65,28 +70,21 @@ public class SFHttpManager {
     }
 
     public SFHttpManager addParams(HashMap<String, String> params) {
-        if (this.params == null) {
+        if (params!=null){
             this.params = new LinkedHashMap<>();
+            this.params.putAll(params);
         }
-        this.params.putAll(params);
+        return this;
+    }
+
+    public SFHttpManager get() {
+        method = "GET";
         return this;
     }
 
     public SFHttpManager get(HashMap<String, String> params) {
         method = "GET";
         addParams(params);
-        return this;
-    }
-
-    public SFHttpManager post() {
-        mediaType = FORM;
-        method = "POST";
-        return this;
-    }
-
-    public SFHttpManager put(MediaType type) {
-        mediaType = type;
-        method = "PUT";
         return this;
     }
 
@@ -101,12 +99,6 @@ public class SFHttpManager {
         mediaType = JSON;
         method = "POST";
         content = jsonString;
-        return this;
-    }
-
-    public SFHttpManager post(MediaType type) {
-        mediaType = type;
-        method = "POST";
         return this;
     }
 
@@ -130,6 +122,12 @@ public class SFHttpManager {
         isPostFile = true;
         mediaType = PCM;
         method = "POST";
+        return this;
+    }
+
+    public SFHttpManager put(MediaType type) {
+        mediaType = type;
+        method = "PUT";
         return this;
     }
 

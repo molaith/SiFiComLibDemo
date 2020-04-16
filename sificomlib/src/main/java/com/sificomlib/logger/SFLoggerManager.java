@@ -1,4 +1,4 @@
-package com.molaith.sificomlib.logger;
+package com.sificomlib.logger;
 
 import java.io.File;
 import java.util.Calendar;

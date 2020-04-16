@@ -1,4 +1,4 @@
-package com.molaith.sificomlib.logger;
+package com.sificomlib.logger;
 
 import android.os.Environment;
 import android.text.TextUtils;

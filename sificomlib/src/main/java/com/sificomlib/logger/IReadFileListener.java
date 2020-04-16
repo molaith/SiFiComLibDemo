@@ -1,4 +1,4 @@
-package com.molaith.sificomlib.logger;
+package com.sificomlib.logger;
 
 public interface IReadFileListener {
     void onReadingProgress(String content, int percent);

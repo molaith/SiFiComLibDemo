@@ -1,4 +1,4 @@
-package com.molaith.sificomlib.permission;
+package com.sificomlib.permission;
 
 import android.app.Activity;
 import android.content.Context;

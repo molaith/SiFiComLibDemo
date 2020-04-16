@@ -1,4 +1,4 @@
-package com.molaith.sificomlib.permission;
+package com.sificomlib.permission;
 
 
 import androidx.fragment.app.Fragment;

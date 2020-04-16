@@ -1,4 +1,4 @@
-package com.molaith.sificomlib.utils;
+package com.sificomlib.utils;
 
 import android.text.TextUtils;
 

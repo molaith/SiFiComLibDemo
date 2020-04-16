@@ -1,11 +1,11 @@
-package com.molaith.sificomlib.utils;
+package com.sificomlib.utils;
 
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.Rect;
 import android.util.DisplayMetrics;
 
-import com.molaith.sificomlib.logger.SFLogger;
+import com.sificomlib.logger.SFLogger;
 
 public class ScreenUtil {
     public int screenWidth = 0;
